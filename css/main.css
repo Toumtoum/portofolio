@@ -1,0 +1,97 @@
+    /*@@@@@@@@@ TEST @@@@@@@@@@@@*/
+    .box{
+      border: 2px red dotted;
+    }
+
+
+    section{
+      height: 100%;
+    }
+
+/*@@@@@@@@@@@@@@@@@ WELCOME PAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+    #home{
+    background-image:url('../img/image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+
+    }
+
+    .titre h1,h2{
+        color: #039be5;
+        padding-bottom: 30px;
+        font-family: Chalkduster;
+    }
+
+    .arrow{
+      bottom: 0;
+      position: absolute; /* postulat de départ */
+      left: 50%; /* à 50%/50% du parent référent */
+      transform: translate(-50%, -50%);/* décalage de 50% de sa propre taille */
+    }
+    .material-icons{
+      font-size: 50px;
+    }
+
+    /* ANIMATION TITLE*/
+
+    .titre
+    {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    text-align: center;
+    max-width: 760px;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: transitionwelcome;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    }
+
+
+    @keyframes transitionwelcome {
+    from {
+     top:-50vh;
+    }
+    to {
+     top: 30vh;
+    }
+    }
+
+/*@@@@@@@@@@@@@@@@@@@@@@@ ABOUT SECTION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+    #about{
+    background-color: #efefef;
+    height: 100vh;
+    text-align: center;
+    padding: 0% 15%;
+    }
+
+    #about .portrait{
+      height: 15vh;
+      border-radius: 50%;
+      border: 1.5px #039be5 solid;
+    }
+
+    #about h1{
+      color: #039be5;
+      font-family: Chalkduster;
+    }
+
+    #about li {
+      display: inline;
+    }
+
+    #about p{
+      font-family: 'Indie Flower';
+      font-size: 20px;
+    }
