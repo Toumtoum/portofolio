@@ -1,11 +1,16 @@
-    /*@@@@@@@@@ TEST @@@@@@@@@@@@*/
+/*@@@@@@@@@ TEST @@@@@@@@@@@@*/
     .box{
       border: 2px red dotted;
     }
-
-
+/*@@@@@@@@@@@@@@@@@@@ GENERALS RULES @@@@@@@@@@@@@@@@@@@@@@@@*/
     section{
       height: 100%;
+      /*position: relative;*/
+    }
+
+    h1,h2{
+        color: #039be5;
+        font-family: Chalkduster;
     }
 
 /*@@@@@@@@@@@@@@@@@ WELCOME PAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -22,17 +27,21 @@
     }
 
     .titre h1,h2{
-        color: #039be5;
         padding-bottom: 30px;
-        font-family: Chalkduster;
+
     }
 
-    .arrow{
+    #home>.arrow{
       bottom: 0;
       position: absolute; /* postulat de départ */
       left: 50%; /* à 50%/50% du parent référent */
       transform: translate(-50%, -50%);/* décalage de 50% de sa propre taille */
+      transform:scale(0);
+      animation-name: appear;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
     }
+
     .material-icons{
       font-size: 50px;
     }
@@ -44,7 +53,6 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 25%;
     text-align: center;
     max-width: 760px;
     border: 1px solid #fff;
@@ -63,28 +71,64 @@
      top:-50vh;
     }
     to {
-     top: 30vh;
+     top: 25%;
     }
+    }
+
+    @keyframes appear{
+      100%  { transform: scale(1); }
+    }
+
+    @media (max-width : 480px){
+
+      h1{
+        font-size: 30px;
+      }
+
+      h2{
+        font-size: 20px;
+      }
+
+      .titre{
+        max-width: 90%;
+        max-height: 50%;
+      }
+
+    }
+
+    @media (min-width : 480px) and (max-width : 800px){
+
+      h1{
+        font-size: 50px;
+      }
+
+      h2{
+        font-size: 30px;
+      }
+
+      .titre{
+        max-width: 90%;
+        max-height: 50%;
+      }
+
     }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@ ABOUT SECTION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
     #about{
     background-color: #efefef;
-    height: 100vh;
     text-align: center;
-    padding: 0% 15%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
     }
 
     #about .portrait{
       height: 15vh;
       border-radius: 50%;
       border: 1.5px #039be5 solid;
-    }
-
-    #about h1{
-      color: #039be5;
-      font-family: Chalkduster;
+      margin-bottom: 20px;
     }
 
     #about li {
@@ -93,5 +137,97 @@
 
     #about p{
       font-family: 'Indie Flower';
-      font-size: 20px;
+      font-size: 25px;
+      margin: 8px;
+    }
+
+    #about>.arrow{
+      padding-top: 20px;
+    }
+
+    .modal{
+      max-height: 100% !important;
+      top: 20px !important;
+      bottom: 20px !important;
+      width: 500px !important;
+
+    }
+
+    iframe{
+      height:95vh;
+      width:450px;
+    }
+
+    .icons i{
+      font-size: 50px;
+      color:#039be5;
+      margin: 10px;
+    }
+
+    @media (max-width : 800px){
+
+      #about p{
+        font-size: 15px;
+      }
+
+      .icons i{
+        font-size: 30px;
+        color:#039be5;
+        margin: 10px;
+      }
+
+      .modal{
+        max-height: 100% !important;
+        top: 20px !important;
+        bottom: 20px !important;
+        width: 300px !important;
+      }
+
+      iframe{
+        width: 100%;
+      }
+    }
+
+
+
+
+
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@ PROJECTS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    #project{
+    /*background-color: #efefef;*/
+    text-align: center;
+    height: 100%;
+    }
+
+    a{
+      color:#039be5 !important;
+    }
+
+
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+    footer{
+      background-color: #283447 !important;
+      bottom: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    footer li{
+      display: inline;
+    }
+
+    .footer-copyright{
+      background-color: #181d26 !important;
+    }
+
+    .container{
+      text-align: center;
+      }
+
+    .container i{
+      font-size: 40px;
+      color:#039be5;
+      margin: 10px;
     }

@@ -17,62 +17,147 @@
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link rel="stylesheet" href="css/main.css">
+        <!-- Icons -->
+        <link rel="stylesheet" href="font-mfizz/font-mfizz.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     </head>
-    <body>
+  <body>
+    <main>
+   <!--@@@@@@@@@@@@@@@ "WELCOME SECTION" @@@@@@@@@@@@@@@@@@@@@-->
 
- <!--@@@@@@@@@@@@@@@ "WELCOME SECTION" @@@@@@@@@@@@@@@@@@@@@-->
+      <section>
+        <div id="home">
+          <div class='titre'>
+            <h1>MEHDI TOUMIA</h1>
+            <h2>Junior Web Developper</h2>
+        </div>
+        <div class="arrow">
+          <a href="#about"><i class="material-icons">expand_more</i></a>
+        <div>
+      </section>
 
-    <section>
-      <div id="home">
-        <div class='titre'>
-          <h1>MEHDI TOUMIA</h1>
-          <h2>Développeur Web Junior</h2>
-      </div>
-      <div class="arrow">
-        <a href="#about"><i class="material-icons">arrow_downward</i></a>
-      <div>
-    </section>
+    <!--@@@@@@@@@@@@@@@@ ABOUT SECTION @@@@@@@@@@@@@@@@@@ -->
 
-  <!--@@@@@@@@@@@@@@@@ ABOUT SECTION @@@@@@@@@@@@@@@@@@ -->
+      <section>
+        <div id="about">
+          <h1>ABOUT ME</h1>
+          <img class="portrait" src="img/portrait.jpg" alt="portrait">
+          <p>My name is Mehdi, you already see it above but it's a good reminder.</p>
+          <p>I'm a 32 years old in the process of becoming a web developper thanks to <a href="https://simplon.co" target="_blank">SIMPLON </a> and the <a href="https://www.adep-roubaix.fr" target="_blank">ADEP Roubaix</a></p>
+          <p>Since the begening of June 2017 I'm studying the base of web developping and every day increasing my skills in :</p>
 
-    <section>
-      <div id="about">
-        <h1>ABOUT ME</h1>
-        <img class="portrait" src="img/portrait.jpg" alt="portrait">
-        <p>My name is Mehdi, you already see it above but it's a good reminder.</p>
-        <p>I'm a 32 years old in the process of becoming a web developper thanks to <a href="https://simplon.co">SIMPLON </a> and the <a href="https://www.adep-roubaix.fr">ADEP Roubaix</a></p>
-        <p>Since the begening of June 2017 i'm studying the base of web developping and every day increasing my skills in :</p>
-      <div class="box">
-        <ul class="list-unstyled list-inline">
-            <li>
-                <img src="" alt="html">
-            </li>
-            <li>
-                <img src="" alt="css">
-            </li>
-            <li>
-                <img src="" alt="git">
-            </li>
-            <li>
-                <img src="" alt="js">
-            </li>
-            <li>
-                <img src="" alt="jquery">
-            </li>
-            <li>
-                <img src="" alt="php">
-            </li>
-            <li>
-                <img src="" alt="Mysql">
-            </li>
-        </ul>
-      </div>
-      <p>Before finding out that it wasn't to late to learn how to code, i've been a pipe fitter and follow a cursus of 3 years of a Master degree in Manufacturing engineering<p>
-      <p>You can learn more about my previous experience on taking a look at my resume</p>
-      <p style="font-style:oblique;color:red">RESUME</p>
-      </div>
-    </section>
+            <div class="icons">
+              <ul class="list-unstyled list-inline">
+                  <li>
+                      <i class="icon-html5-alt"></i>
+                  </li>
+                  <li>
+                      <i class="icon-css3-alt"></i>
+                  </li>
+                  <li>
+                      <i class="icon-git"></i>
+                  </li>
+                  <li>
+                      <i class="icon-javascript-alt"></i>
+                  </li>
+                  <li>
+                      <i class="icon-jquery"></i>
+                  </li>
+                  <li>
+                      <i class="icon-php-alt"></i>
+                  </li>
+                  <li>
+                      <i class="icon-mysql-alt"></i>
+                  </li>
+              </ul>
+
+            </div>
+            <p>Before finding out that it wasn't to late to learn how to code, I followed a cursus of 3 years of a Master degree in Manufacturing engineering and I've work as pipe fitter<p>
+            <p>You can learn more about my previous experience on taking a look at my resume or downloading it</p>
+            <!-- Modal Trigger -->
+            <a href="" data-target="modal1" style="font-style:oblique;font-size:20px" class="modal-trigger">RESUME</a>
+            <!-- <a class="waves-effect waves-light btn " href="#modal1">Modal</a> -->
+            <!-- <div class="arrow">
+              <a href="#project"><i class="material-icons">expand_more</i></a>
+            <div> -->
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal__content">
+                <iframe src="cv.pdf" frameborder="0"/></iframe>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+    <!--@@@@@@@@@@@@@@@@ PROJECTS SECTION @@@@@@@@@@@@@@@@@@@-->
+
+      <section>
+        <div id="project">
+          <h1>MY PROJECTS</h1>
+
+        <div class="row">
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/office.jpg">
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/office.jpg">
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/office.jpg">
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+       <div class="container">
+          <h7 class="white-text">© 2017 Copyright Mehdi</h7>
+             <ul>
+               <li><a href="https://github.com/Toumtoum" target="_blank"><li><i class="icon-git"></i></li></a></li>
+               <li><a href="mailto:mehdi.toumia@yahoo.com"><i class="fa fa-envelope"></i></a></li>
+             </ul>
+           </div>
+     </footer>
 
 
         <!--Import jQuery before materialize.js-->
@@ -80,5 +165,5 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 
-    </body>
+  </body>
 </html>
